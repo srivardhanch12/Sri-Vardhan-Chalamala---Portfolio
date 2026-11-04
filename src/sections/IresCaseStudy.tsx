@@ -83,6 +83,15 @@ function IresCaseStudy() {
           {featuredProject.overview}
         </p>
 
+        <a
+          className="ires-prototype-button"
+          href="https://www.figma.com/proto/KLqlhm7bGVu516Hk0Shakg/IRES-%E2%80%94-UX-Design---Product-Prototype?node-id=1-3359&t=vn0W8hP1HZj30r6r-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Interactive Prototype
+        </a>
+
       </div>
 
 
