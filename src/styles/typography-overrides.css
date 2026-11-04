@@ -1,0 +1,488 @@
+
+/* =========================================
+   VARDHAN PORTFOLIO
+   GLOBAL TYPOGRAPHY ENHANCEMENT
+========================================= */
+
+/* GLOBAL BASE TEXT */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   GLOBAL PARAGRAPHS
+========================================= */
+
+.main-content p {
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.main-content small {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar-links a {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navbar-status {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar-name {
+  font-size: clamp(30px, 2.6vw, 39px);
+}
+
+.sidebar-role {
+  font-size: 14px;
+}
+
+.sidebar-specialization {
+  font-size: 14px;
+}
+
+.sidebar-label {
+  font-size: 11px;
+}
+
+.sidebar-detail-item p {
+  font-size: 14px;
+}
+
+.sidebar-detail-item small {
+  font-size: 12px;
+}
+
+.sidebar-socials a {
+  font-size: 13px;
+}
+
+.sidebar-resume {
+  font-size: 12px;
+}
+
+.sidebar-footer {
+  font-size: 9px;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-focus > span {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.hero-focus-items span {
+  font-size: 13px;
+}
+
+.hero-primary-button,
+.hero-secondary-button {
+  font-size: 13px;
+}
+
+.hero-preview-top {
+  font-size: 10px;
+}
+
+.hero-preview-brand {
+  font-size: 10px;
+}
+
+.hero-preview-status {
+  font-size: 9px;
+}
+
+.hero-preview-eyebrow {
+  font-size: 10px;
+}
+
+.hero-preview-description {
+  font-size: 18px;
+}
+
+.hero-preview-features p {
+  font-size: 9px;
+}
+
+.hero-preview-link {
+  font-size: 11px;
+}
+
+.hero-scroll-indicator {
+  font-size: 10px;
+}
+
+
+/* =========================================
+   FEATURED PROJECT
+========================================= */
+
+.featured-project-section .section-eyebrow {
+  font-size: 12px;
+}
+
+.featured-project-heading h2 {
+  font-size: clamp(44px, 5vw, 64px);
+}
+
+.featured-project-intro {
+  font-size: 15px;
+}
+
+.featured-project-count {
+  font-size: 10px;
+}
+
+.featured-project-meta {
+  font-size: 11px;
+}
+
+.featured-visual-brand {
+  font-size: 10px;
+}
+
+.featured-visual-status {
+  font-size: 9px;
+}
+
+.featured-visual-eyebrow {
+  font-size: 11px;
+}
+
+.featured-visual-metrics p {
+  font-size: 9px;
+}
+
+.featured-project-description p {
+  font-size: 14px;
+}
+
+.featured-project-category {
+  font-size: 11px;
+}
+
+.featured-project-year {
+  font-size: 11px;
+}
+
+.featured-project-link {
+  font-size: 12px;
+}
+
+.featured-project-technologies h4 {
+  font-size: 14px;
+}
+
+.featured-technology-list span {
+  font-size: 12px;
+}
+
+.featured-capabilities-heading p {
+  font-size: 10px;
+}
+
+.featured-capability-card p {
+  font-size: 13px;
+}
+
+
+/* =========================================
+   IRES CASE STUDY
+========================================= */
+
+.ires-case-category {
+  font-size: 11px;
+}
+
+.ires-case-introduction {
+  font-size: 15px;
+}
+
+.ires-card-label {
+  font-size: 11px;
+}
+
+.ires-overview-card > p {
+  font-size: 14px;
+}
+
+.ires-overview-year {
+  font-size: 11px;
+}
+
+.ires-design-challenge p {
+  font-size: 14px;
+}
+
+.ires-section-index {
+  font-size: 11px;
+}
+
+.ires-flow-card p {
+  font-size: 13px;
+}
+
+.ires-principle-item p {
+  font-size: 13px;
+}
+
+.ires-engineering-description {
+  font-size: 14px;
+}
+
+.ires-engineering-details p {
+  font-size: 13px;
+}
+
+.ires-stack-item span {
+  font-size: 10px;
+}
+
+.ires-case-footer p {
+  font-size: 13px;
+}
+
+.ires-case-footer span {
+  font-size: 10px;
+}
+
+
+/* =========================================
+   SKILLS SECTION
+========================================= */
+
+.skills-section .section-eyebrow {
+  font-size: 12px;
+}
+
+.skills-heading > p {
+  font-size: 14px;
+}
+
+.skills-category-indicator {
+  font-size: 10px;
+}
+
+.skills-category-description {
+  font-size: 13px;
+}
+
+.skills-tag {
+  font-size: 12px;
+}
+
+.skills-small-label {
+  font-size: 11px;
+}
+
+.skills-development-index {
+  font-size: 10px;
+}
+
+.skills-development-description {
+  font-size: 13px;
+}
+
+.skills-development-tag {
+  font-size: 12px;
+}
+
+.skills-foundation-item p {
+  font-size: 13px;
+}
+
+.skills-section-footer p {
+  font-size: 18px;
+}
+
+.skills-section-footer span {
+  font-size: 10px;
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section > .section-eyebrow {
+  font-size: 12px;
+}
+
+.about-introduction,
+.about-summary {
+  font-size: 15px;
+  line-height: 2;
+}
+
+.about-label {
+  font-size: 11px;
+}
+
+.about-index {
+  font-size: 11px;
+}
+
+.education-year {
+  font-size: 12px;
+}
+
+.education-degree {
+  font-size: 13px;
+}
+
+.education-location {
+  font-size: 12px;
+}
+
+.achievement-content p {
+  font-size: 13px;
+}
+
+.interests-description {
+  font-size: 14px;
+}
+
+.interest-card h4 {
+  font-size: 18px;
+}
+
+.about-closing span {
+  font-size: 10px;
+}
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-label {
+  font-size: 11px;
+}
+
+.contact-description {
+  font-size: 14px;
+}
+
+.contact-information-label {
+  font-size: 11px;
+}
+
+.contact-information-item > a,
+.contact-information-item > p {
+  font-size: 14px;
+}
+
+.contact-social-links a {
+  font-size: 14px;
+}
+
+.contact-primary-button {
+  font-size: 13px;
+}
+
+.contact-closing span {
+  font-size: 10px;
+}
+
+
+/* =========================================
+   PROJECT IMAGE GALLERY
+========================================= */
+
+.gallery-eyebrow {
+  font-size: 11px;
+}
+
+.gallery-heading > p {
+  font-size: 14px;
+}
+
+.gallery-caption-content > span {
+  font-size: 10px;
+}
+
+.gallery-caption-content h4 {
+  font-size: 24px;
+}
+
+.gallery-caption-content p {
+  font-size: 13px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer-label {
+  font-size: 11px;
+}
+
+.footer-navigation a {
+  font-size: 13px;
+}
+
+.footer-social > a {
+  font-size: 13px;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+  font-size: 10px;
+}
+
+
+/* =========================================
+   RESPONSIVE TYPOGRAPHY
+========================================= */
+
+@media (max-width: 600px) {
+
+  .main-content p {
+    font-size: 14px;
+  }
+
+  .hero-preview-features p {
+    font-size: 9px;
+  }
+
+  .gallery-caption-content h4 {
+    font-size: 20px;
+  }
+
+  .gallery-caption-content p {
+    font-size: 12px;
+  }
+
+  .contact-description,
+  .about-introduction,
+  .about-summary {
+    font-size: 14px;
+  }
+
+}

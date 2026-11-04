@@ -1,0 +1,308 @@
+
+/* =========================================
+   VARDHAN PORTFOLIO
+   CONTACT SECTION
+========================================= */
+
+
+/* Main section */
+
+.contact-section {
+  width: 100%;
+  padding: 90px 0;
+
+  background: var(--color-background);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+
+/* =========================================
+   MAIN CONTACT LAYOUT
+========================================= */
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+
+  gap: 55px;
+  margin-top: 25px;
+}
+
+
+/* =========================================
+   CONTACT INTRODUCTION
+========================================= */
+
+.contact-main {
+  max-width: 650px;
+}
+
+.contact-label {
+  color: var(--color-muted);
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.contact-main h2 {
+  margin-top: 22px;
+
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: clamp(39px, 4.5vw, 57px);
+
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -1.7px;
+}
+
+.contact-main h2 span {
+  display: block;
+  color: var(--color-muted);
+}
+
+
+/* Contact description */
+
+.contact-description {
+  max-width: 530px;
+
+  margin-top: 23px;
+
+  color: var(--color-text);
+
+  font-size: 12px;
+  line-height: 2;
+}
+
+
+/* =========================================
+   PRIMARY CONTACT BUTTON
+========================================= */
+
+.contact-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top: 35px;
+  padding: 15px 20px;
+
+  background: var(--color-heading);
+  color: #FFFFFF;
+
+  border: 1px solid var(--color-heading);
+  border-radius: var(--radius-sm);
+
+  font-size: 11px;
+  font-weight: 600;
+
+  transition: var(--transition-normal);
+}
+
+.contact-primary-button:hover {
+  background: #536B5E;
+  border-color: #536B5E;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 28px;
+
+  padding: 28px;
+
+  background: var(--color-sidebar);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+
+/* Individual information block */
+
+.contact-information-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact-information-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+
+/* Labels */
+
+.contact-information-label {
+  color: var(--color-muted);
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+
+/* Email and location */
+
+.contact-information-item > a,
+.contact-information-item > p {
+  color: var(--color-heading);
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+
+/* Email link */
+
+.contact-information-item > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 8px;
+
+  overflow-wrap: anywhere;
+
+  transition: var(--transition-normal);
+}
+
+.contact-information-item > a:hover {
+  color: var(--color-muted);
+}
+
+
+/* =========================================
+   SOCIAL LINKS
+========================================= */
+
+.contact-social-links {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.contact-social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--color-heading);
+
+  font-size: 12px;
+  font-weight: 500;
+
+  transition: var(--transition-normal);
+}
+
+.contact-social-links a:hover {
+  padding-left: 5px;
+  color: var(--color-muted);
+}
+
+
+/* =========================================
+   CLOSING STATEMENT
+========================================= */
+
+.contact-closing {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin-top: 80px;
+  padding-top: 28px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-closing p {
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: clamp(21px, 3vw, 30px);
+
+  line-height: 1.5;
+}
+
+.contact-closing span {
+  color: var(--color-muted);
+
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .contact-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .contact-information {
+    padding: 22px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .contact-section {
+    padding: 65px 0;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .contact-main h2 {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .contact-information {
+    padding: 24px;
+  }
+
+  .contact-closing {
+    margin-top: 55px;
+  }
+
+}

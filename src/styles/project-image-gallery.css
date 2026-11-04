@@ -1,0 +1,228 @@
+
+/* =========================================
+   VARDHAN PORTFOLIO
+   IRES ORIGINAL IMAGE GALLERY
+========================================= */
+
+.project-gallery {
+  width: 100%;
+  margin-top: 65px;
+  padding: 40px 0 20px;
+  border-top: 1px solid var(--color-border);
+}
+
+/* =========================================
+   GALLERY HEADING
+========================================= */
+
+.gallery-heading {
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+
+.gallery-eyebrow {
+  color: var(--color-muted);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.gallery-heading h3 {
+  margin-top: 15px;
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 400;
+}
+
+.gallery-heading > p {
+  max-width: 620px;
+  margin-top: 12px;
+  color: var(--color-text);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* =========================================
+   GALLERY GRID
+========================================= */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 20px;
+  align-items: start;
+}
+
+/* Wide screenshots occupy the entire row */
+
+.gallery-item--wide {
+  grid-column: 1 / -1;
+}
+
+/* Half-width screenshots */
+
+.gallery-item--half {
+  grid-column: span 1;
+  min-width: 0;
+}
+
+/* =========================================
+   ORIGINAL SCREENSHOT DISPLAY
+========================================= */
+
+.gallery-image-link {
+  display: block;
+  width: 100%;
+
+  padding: 10px;
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  overflow: hidden;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.gallery-image-link:hover {
+  border-color: var(--color-muted);
+  box-shadow: 0 12px 28px var(--color-shadow);
+}
+
+/*
+  IMPORTANT:
+  Keep original image proportions.
+  Never crop or stretch screenshots.
+*/
+
+.gallery-image-link img {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  object-fit: contain;
+  object-position: center;
+
+  border-radius: 3px;
+
+  filter: none;
+  transform: none;
+}
+
+/* =========================================
+   IMAGE CAPTIONS
+========================================= */
+
+/* =========================================
+   IMAGE CAPTION ABOVE IMAGE
+========================================= */
+
+.gallery-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 0 4px;
+  margin-bottom: 16px;
+}
+
+.gallery-caption-content {
+  min-width: 0;
+}
+
+.gallery-caption-content > span {
+  color: var(--color-muted);
+
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.gallery-caption-content h4 {
+  margin-top: 8px;
+
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.gallery-caption-content p {
+  margin-top: 7px;
+
+  color: var(--color-text);
+
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.gallery-open-icon {
+  flex-shrink: 0;
+
+  color: var(--color-muted);
+  font-size: 17px;
+
+  transition: transform 0.25s ease;
+}
+
+.gallery-item:hover .gallery-open-icon {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .project-gallery {
+    margin-top: 50px;
+  }
+
+  .gallery-grid {
+    gap: 22px 15px;
+  }
+
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .project-gallery {
+    margin-top: 45px;
+    padding-top: 30px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .gallery-item--wide,
+  .gallery-item--half {
+    grid-column: 1 / -1;
+  }
+
+  .gallery-image-link {
+    padding: 6px;
+  }
+
+  .gallery-caption-content h4 {
+    font-size: 17px;
+  }
+
+}

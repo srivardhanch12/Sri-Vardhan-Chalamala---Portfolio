@@ -1,0 +1,316 @@
+
+/* =========================================
+   VARDHAN PORTFOLIO
+   IRES UX DESIGN PROCESS
+========================================= */
+
+.ux-process {
+  width: 100%;
+  padding: 90px 0;
+  background: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* SECTION INTRODUCTION */
+
+.ux-process-header {
+  max-width: 850px;
+}
+
+.ux-process-category {
+  color: var(--color-muted);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.ux-process-header h2 {
+  max-width: 800px;
+  margin-top: 24px;
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-size: clamp(38px, 5vw, 60px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1.8px;
+}
+
+.ux-process-introduction {
+  max-width: 720px;
+  margin-top: 22px;
+  color: var(--color-text);
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* CONTEXT CARDS */
+
+.ux-context-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 55px;
+}
+
+.ux-context-card {
+  min-height: 250px;
+  padding: 30px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: var(--transition-normal);
+}
+
+.ux-context-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--color-shadow);
+}
+
+.ux-context-card h3 {
+  max-width: 420px;
+  margin-top: 28px;
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.ux-context-card p {
+  margin-top: 15px;
+  color: var(--color-text);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* USER JOURNEY */
+
+.ux-journey-section {
+  margin-top: 75px;
+}
+
+.ux-subsection-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.ux-subsection-heading h3,
+.ux-decisions-section > h3 {
+  margin-top: 14px;
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.ux-journey-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.ux-journey-card {
+  min-height: 195px;
+  padding: 27px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: var(--transition-normal);
+}
+
+.ux-journey-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px var(--color-shadow);
+}
+
+.ux-journey-number {
+  color: var(--color-accent-dark);
+  font-family: var(--font-heading);
+  font-size: 23px;
+}
+
+.ux-journey-card h4 {
+  margin-top: 25px;
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.ux-journey-card p {
+  margin-top: 11px;
+  color: var(--color-text);
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+/* INTERACTION DESIGN DECISIONS */
+
+.ux-decisions-section {
+  margin-top: 75px;
+}
+
+.ux-decisions-list {
+  margin-top: 30px;
+  border-top: 1px solid var(--color-border);
+}
+
+.ux-decision-item {
+  display: grid;
+  grid-template-columns: 55px 1fr 1.3fr;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 5px;
+  border-bottom: 1px solid var(--color-border);
+  transition: var(--transition-normal);
+}
+
+.ux-decision-item:hover {
+  padding-left: 12px;
+  background: rgba(229, 235, 227, 0.35);
+}
+
+.ux-decision-item > span {
+  color: var(--color-muted);
+  font-family: var(--font-heading);
+  font-size: 17px;
+}
+
+.ux-decision-item h4 {
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ux-decision-item p {
+  color: var(--color-text);
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+/* VISUAL DESIGN & USABILITY */
+
+.ux-design-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 75px;
+}
+
+.ux-design-card {
+  min-height: 250px;
+  padding: 30px;
+  background: var(--color-sidebar);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: var(--transition-normal);
+}
+
+.ux-design-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px var(--color-shadow);
+}
+
+.ux-design-card h3 {
+  max-width: 380px;
+  margin-top: 28px;
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.ux-design-card p {
+  margin-top: 15px;
+  color: var(--color-text);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* CASE STUDY NOTE */
+
+.ux-process-note {
+  max-width: 760px;
+  margin-top: 35px;
+  color: var(--color-muted);
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 900px) {
+  .ux-decision-item {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .ux-decision-item p {
+    grid-column: 2;
+  }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+  .ux-process {
+    padding: 65px 0;
+  }
+
+  .ux-process-header h2 {
+    font-size: 38px;
+    letter-spacing: -1.2px;
+  }
+
+  .ux-context-grid,
+  .ux-journey-grid,
+  .ux-design-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ux-context-grid {
+    margin-top: 35px;
+  }
+
+  .ux-context-card,
+  .ux-design-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .ux-context-card h3,
+  .ux-design-card h3 {
+    font-size: 24px;
+  }
+
+  .ux-journey-section,
+  .ux-decisions-section,
+  .ux-design-grid {
+    margin-top: 55px;
+  }
+
+  .ux-subsection-heading h3,
+  .ux-decisions-section > h3 {
+    font-size: 26px;
+  }
+
+  .ux-journey-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .ux-decision-item {
+    grid-template-columns: 35px 1fr;
+    gap: 12px;
+    padding: 20px 2px;
+  }
+
+  .ux-decision-item p {
+    grid-column: 2;
+  }
+}

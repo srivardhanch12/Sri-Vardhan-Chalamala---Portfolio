@@ -1,0 +1,271 @@
+
+/* =========================================
+   VARDHAN PORTFOLIO
+   FIXED PROFILE SIDEBAR
+========================================= */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: var(--sidebar-width, 30vw);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 28px clamp(24px, 3.5vw, 55px) 28px;
+
+  background: var(--color-sidebar);
+  color: var(--color-text);
+
+  border-right: 1px solid var(--color-border);
+
+  overflow: hidden;
+  z-index: 50;
+}
+
+/* Profile content */
+
+.sidebar-content {
+  width: 100%;
+  max-width: 360px;
+
+  margin: 0;
+  padding-top: 0;
+}
+
+/* Name and professional title */
+
+.sidebar-introduction {
+  margin-top: 0;
+}
+
+.sidebar-name {
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 2.5vw, 38px);
+
+  font-weight: 700;
+  line-height: 1.15;
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.sidebar-role {
+  margin-top: 17px;
+
+  color: var(--color-heading);
+
+  font-size: clamp(12px, 1vw, 15px);
+  font-weight: 700;
+
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.sidebar-specialization {
+  margin-top: 7px;
+
+  color: var(--color-muted);
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Horizontal divider */
+
+.sidebar-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 27px 0;
+
+  background: var(--color-muted);
+  opacity: 0.4;
+}
+
+/* Personal information */
+
+.sidebar-details {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.sidebar-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-label {
+  color: var(--color-muted);
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+
+.sidebar-detail-item p {
+  color: var(--color-heading);
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.sidebar-detail-item small {
+  color: var(--color-text);
+
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+/* Social links */
+
+.sidebar-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-socials a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 9px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  color: var(--color-text);
+
+  font-size: 12px;
+  font-weight: 500;
+
+  transition: var(--transition-normal);
+}
+
+.sidebar-socials a:hover {
+  color: var(--color-heading);
+  padding-left: 5px;
+}
+
+/* Resume button */
+
+.sidebar-resume {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 24px;
+  padding: 14px 17px;
+
+  background: var(--color-heading);
+  color: #FFFFFF;
+
+  border: 1px solid var(--color-heading);
+  border-radius: var(--radius-sm);
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  transition: var(--transition-normal);
+}
+
+.sidebar-resume:hover {
+  background: #536B5E;
+  transform: translateY(-2px);
+}
+
+/* Sidebar footer */
+
+.sidebar-footer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  margin-top: 25px;
+
+  color: var(--color-muted);
+
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Accessibility */
+
+.sidebar a:focus-visible {
+  outline: 2px solid var(--color-heading);
+  outline-offset: 4px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) and (min-width: 801px) {
+  .sidebar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .sidebar-name {
+    font-size: 27px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .sidebar {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    min-height: auto;
+
+    padding: 38px 7% 25px;
+
+    overflow: visible;
+  }
+
+  .sidebar-content {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .sidebar-name {
+    font-size: clamp(27px, 7vw, 35px);
+  }
+
+  .sidebar-role {
+    font-size: 12px;
+  }
+
+  .sidebar-footer {
+    margin-top: 30px;
+
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}

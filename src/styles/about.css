@@ -1,0 +1,690 @@
+
+/* =========================================
+   VARDHAN PORTFOLIO
+   ABOUT SECTION
+========================================= */
+
+
+/* Main section */
+
+.about-section {
+  width: 100%;
+  padding: 85px 0;
+
+  background: var(--color-background);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+
+/* =========================================
+   ABOUT INTRODUCTION
+========================================= */
+
+.about-header {
+  max-width: 850px;
+}
+
+.about-header h2 {
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: clamp(40px, 5vw, 62px);
+
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -2px;
+}
+
+.about-header h2 span {
+  display: block;
+  color: var(--color-muted);
+}
+
+.about-introduction,
+.about-summary {
+  max-width: 720px;
+  margin-top: 22px;
+
+  color: var(--color-text);
+
+  font-size: 13px;
+  line-height: 2;
+}
+
+.about-summary {
+  margin-top: 15px;
+}
+
+
+/* =========================================
+   SHARED SUBSECTION HEADING
+========================================= */
+
+.about-subsection-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 20px;
+}
+
+.about-label {
+  display: block;
+
+  color: var(--color-muted);
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+
+.about-subsection-heading h3 {
+  margin-top: 12px;
+
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: 29px;
+  font-weight: 400;
+}
+
+.about-index {
+  color: var(--color-muted);
+
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   EDUCATION
+========================================= */
+
+.about-education {
+  margin-top: 70px;
+}
+
+.education-card {
+  display: grid;
+
+  grid-template-columns: 140px 1fr 35px;
+  align-items: center;
+
+  gap: 22px;
+
+  margin-top: 25px;
+  padding: 28px;
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  transition: var(--transition-normal);
+}
+
+.education-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px var(--color-shadow);
+}
+
+.education-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 15px;
+}
+
+.education-year {
+  color: var(--color-muted);
+
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.education-indicator {
+  width: 9px;
+  height: 9px;
+
+  background: var(--color-accent);
+
+  border-radius: 50%;
+}
+
+.education-card-content h4 {
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.education-degree {
+  margin-top: 10px;
+
+  color: var(--color-text);
+
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.education-location {
+  margin-top: 7px;
+
+  color: var(--color-muted);
+
+  font-size: 10px;
+}
+
+.education-number {
+  color: var(--color-muted);
+
+  font-family: var(--font-heading);
+  font-size: 20px;
+}
+
+
+/* =========================================
+   ACHIEVEMENTS
+========================================= */
+
+.about-achievements {
+  margin-top: 65px;
+}
+
+.achievement-card {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+
+  margin-top: 25px;
+  padding: 25px;
+
+  background: var(--color-sidebar);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  transition: var(--transition-normal);
+}
+
+.achievement-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 28px var(--color-shadow);
+}
+
+.achievement-icon {
+  flex-shrink: 0;
+
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: 22px;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-content h4 {
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.achievement-content p {
+  margin-top: 8px;
+
+  color: var(--color-text);
+
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.achievement-arrow {
+  color: var(--color-muted);
+  font-size: 18px;
+}
+
+
+/* =========================================
+   CREATIVE INTERESTS
+========================================= */
+
+.about-interests {
+  margin-top: 70px;
+}
+
+.interests-description {
+  max-width: 680px;
+  margin-top: 20px;
+
+  color: var(--color-text);
+
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.interests-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 13px;
+  margin-top: 25px;
+}
+
+.interest-card {
+  min-height: 100px;
+
+  display: grid;
+
+  grid-template-columns: 35px 1fr 20px;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 20px;
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  transition: var(--transition-normal);
+}
+
+.interest-card:hover {
+  background: var(--color-accent-soft);
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 9px 23px var(--color-shadow);
+}
+
+.interest-card > span:first-child {
+  color: var(--color-muted);
+
+  font-family: var(--font-heading);
+  font-size: 15px;
+}
+
+.interest-card h4 {
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.interest-arrow {
+  color: var(--color-muted);
+  font-size: 14px;
+
+  transition: var(--transition-normal);
+}
+
+.interest-card:hover .interest-arrow {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   CLOSING STATEMENT
+========================================= */
+
+.about-closing {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  margin-top: 65px;
+  padding: 30px 0 5px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.about-closing p {
+  max-width: 670px;
+
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: 27px;
+  line-height: 1.5;
+}
+
+.about-closing span {
+  color: var(--color-muted);
+
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .education-card {
+    grid-template-columns: 115px 1fr 25px;
+    gap: 15px;
+  }
+
+  .education-card-content h4 {
+    font-size: 22px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .about-section {
+    padding: 65px 0;
+  }
+
+  .about-header h2 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .about-education,
+  .about-achievements,
+  .about-interests {
+    margin-top: 50px;
+  }
+
+  .about-subsection-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-card {
+    grid-template-columns: 1fr 25px;
+    gap: 15px;
+
+    padding: 22px;
+  }
+
+  .education-card-left {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 12px;
+  }
+
+  .education-card-content {
+    grid-column: 1;
+  }
+
+  .education-number {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .education-card-content h4 {
+    font-size: 22px;
+  }
+
+  .achievement-card {
+    padding: 19px;
+    gap: 13px;
+  }
+
+  .achievement-icon {
+    width: 43px;
+    height: 43px;
+    font-size: 18px;
+  }
+
+  .achievement-content h4 {
+    font-size: 18px;
+  }
+
+  .achievement-arrow {
+    display: none;
+  }
+
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interest-card {
+    min-height: 85px;
+    padding: 17px;
+  }
+
+  .about-closing p {
+    font-size: 24px;
+  }
+
+}
+
+
+/* =========================================
+   ABOUT SECTION TYPOGRAPHY IMPROVEMENTS
+========================================= */
+
+/* ABOUT ME section label */
+
+.about-section > .section-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+
+  margin-bottom: 22px;
+}
+
+.about-section > .section-eyebrow span {
+  font-size: 12px;
+}
+
+
+/* About introduction paragraphs */
+
+.about-introduction,
+.about-summary {
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+
+/* ACADEMIC BACKGROUND and other subsection labels */
+
+.about-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+}
+
+
+/* Education, Achievements and Interests headings */
+
+.about-subsection-heading h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+
+/* Mobile typography */
+
+@media (max-width: 600px) {
+
+  .about-section > .section-eyebrow {
+    font-size: 11px;
+  }
+
+  .about-introduction,
+  .about-summary {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .about-label {
+    font-size: 10px;
+  }
+
+  .about-subsection-heading h3 {
+    font-size: 27px;
+  }
+
+}
+
+
+/* =========================================
+   PROFESSIONAL ABOUT SECTION
+========================================= */
+
+.about-focus-section {
+  margin-top: 65px;
+}
+
+.about-focus-heading h3 {
+  margin-top: 13px;
+
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+
+/* Focus area grid */
+
+.about-focus-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 15px;
+  margin-top: 25px;
+}
+
+
+/* Individual focus card */
+
+.about-focus-card {
+  min-height: 205px;
+  padding: 23px;
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  transition: var(--transition-normal);
+}
+
+.about-focus-card:hover {
+  transform: translateY(-5px);
+
+  background: var(--color-accent-soft);
+
+  box-shadow: 0 12px 28px var(--color-shadow);
+}
+
+
+/* Card number */
+
+.about-focus-number {
+  color: var(--color-muted);
+
+  font-family: var(--font-heading);
+  font-size: 20px;
+}
+
+
+/* Card title */
+
+.about-focus-card h4 {
+  margin-top: 25px;
+
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+
+/* Card description */
+
+.about-focus-card p {
+  margin-top: 12px;
+
+  color: var(--color-text);
+
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+  .about-focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-focus-card {
+    min-height: auto;
+  }
+
+  .about-focus-card h4 {
+    margin-top: 16px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .about-focus-section {
+    margin-top: 45px;
+  }
+
+  .about-focus-heading h3 {
+    font-size: 24px;
+  }
+
+  .about-focus-card {
+    padding: 20px;
+  }
+
+}
+

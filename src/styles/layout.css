@@ -1,0 +1,265 @@
+
+/* =========================================
+   VARDHAN PORTFOLIO
+   INDEPENDENT SCROLL LAYOUT
+========================================= */
+
+:root {
+  --sidebar-width: clamp(280px, 30vw, 460px);
+}
+
+
+/* =========================================
+   DESKTOP LAYOUT
+========================================= */
+
+@media (min-width: 801px) {
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .portfolio-layout {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+    min-height: 0;
+
+    display: grid;
+
+    grid-template-columns:
+      var(--sidebar-width)
+      minmax(0, 1fr);
+
+    overflow: hidden;
+  }
+
+
+  /* LEFT SIDE: FIXED SIDEBAR */
+
+  .sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: var(--sidebar-width);
+    height: 100vh;
+
+    overflow: hidden;
+
+    z-index: 50;
+  }
+
+
+  /* RIGHT SIDE: INDEPENDENT SCROLL */
+
+  .main-content {
+    grid-column: 2;
+
+    width: 100%;
+    min-width: 0;
+
+    height: 100vh;
+    min-height: 0;
+
+    padding: 0 clamp(25px, 4.5vw, 70px);
+
+    background: var(--color-background);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+
+
+  /* Right-side scrollbar */
+
+  .main-content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .main-content::-webkit-scrollbar-track {
+    background: var(--color-background);
+  }
+
+  .main-content::-webkit-scrollbar-thumb {
+    background: var(--color-muted);
+    border-radius: 20px;
+  }
+
+  .main-content::-webkit-scrollbar-thumb:hover {
+    background: var(--color-heading);
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 801px) and (max-width: 1100px) {
+
+  :root {
+    --sidebar-width: clamp(260px, 34vw, 370px);
+  }
+
+  .main-content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE: NORMAL PAGE SCROLL
+========================================= */
+
+@media (max-width: 800px) {
+
+  html,
+  body,
+  #root {
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .portfolio-layout {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: visible;
+  }
+
+  .sidebar {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    min-height: auto;
+
+    overflow: visible;
+  }
+
+  .main-content {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+
+    padding: 0 6%;
+
+    overflow: visible;
+  }
+
+}
+
+
+/* =========================================
+   STICKY NAVIGATION
+   REMAINS VISIBLE WHILE CONTENT SCROLLS
+========================================= */
+
+.main-content > .navbar {
+  position: sticky;
+
+  top: 0;
+
+  width: 100%;
+
+  z-index: 100;
+
+  background: var(--color-background);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* =========================================
+   MOBILE FIXED TOP NAVIGATION
+========================================= */
+
+@media (max-width: 800px) {
+
+  /* Keep navigation fixed at the top of the screen */
+
+  .main-content > .navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 75px;
+    min-height: 75px;
+
+    padding: 0 6%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    background: var(--color-background);
+
+    border-bottom: 1px solid var(--color-border);
+
+    z-index: 1000;
+  }
+
+  /* Create space for the fixed navbar above the sidebar */
+
+  .sidebar {
+    padding-top: 75px;
+    box-sizing: border-box;
+  }
+
+  /* Dropdown opens directly below the fixed navbar */
+
+  .navbar-links.navbar-links-open {
+    position: absolute;
+
+    top: 75px;
+    left: 0;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    z-index: 1001;
+  }
+
+}
+
+/* Small mobile screens */
+
+@media (max-width: 400px) {
+
+  .main-content > .navbar {
+    height: 68px;
+    min-height: 68px;
+  }
+
+  .sidebar {
+    padding-top: 68px;
+  }
+
+  .navbar-links.navbar-links-open {
+    top: 68px;
+  }
+
+}

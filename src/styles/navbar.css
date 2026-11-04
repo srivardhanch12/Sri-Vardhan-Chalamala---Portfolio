@@ -1,0 +1,374 @@
+
+/* =========================================
+   VARDHAN PORTFOLIO
+   NAVIGATION BAR
+========================================= */
+
+
+/* Main navbar */
+
+.navbar {
+  position: relative;
+
+  width: 100%;
+  min-height: 85px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+
+  z-index: 30;
+}
+
+
+/* Brand */
+
+.navbar-brand {
+  flex-shrink: 0;
+
+  color: var(--color-heading);
+
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition: var(--transition-normal);
+}
+
+.navbar-brand span {
+  color: var(--color-muted);
+}
+
+.navbar-brand:hover {
+  opacity: 0.75;
+}
+
+
+/* Navigation links */
+
+.navbar-links {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: clamp(25px, 3vw, 42px);
+}
+.navbar-links a {
+  position: relative;
+
+  padding: 8px 0;
+
+  color: var(--color-text);
+
+  font-size: 14px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  transition: var(--transition-normal);
+}
+
+
+/* Navigation hover underline */
+
+.navbar-links a::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 0;
+  height: 1px;
+
+  background: var(--color-heading);
+
+  transition: var(--transition-normal);
+}
+
+.navbar-links a:hover {
+  color: var(--color-heading);
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+
+/* Availability indicator */
+
+.navbar-status {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: var(--color-muted);
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--color-accent);
+
+  box-shadow: 0 0 0 4px var(--color-accent-soft);
+}
+
+
+/* =========================================
+   MOBILE HAMBURGER MENU BUTTON
+========================================= */
+
+.navbar-menu-button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  padding: 0;
+
+  border: none;
+  border-radius: 8px;
+
+  background: transparent;
+  color: var(--color-heading);
+
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.navbar-menu-button:hover {
+  background: var(--color-accent-soft);
+}
+
+/* Hamburger icon container */
+
+.hamburger-icon {
+  width: 24px;
+  height: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Three hamburger lines */
+
+.hamburger-icon span {
+  display: block;
+
+  width: 24px;
+  height: 2px;
+
+  border-radius: 2px;
+  background: var(--color-heading);
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+/* Animate hamburger into close icon */
+
+.hamburger-icon.is-open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-icon.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.is-open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Keyboard accessibility */
+
+.navbar a:focus-visible,
+.navbar button:focus-visible {
+  outline: 2px solid var(--color-heading);
+  outline-offset: 5px;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .navbar {
+    gap: 12px;
+  }
+
+  .navbar-links {
+  gap: 22px;
+}
+
+.navbar-links a {
+  font-size: 12px;
+}
+  .navbar-status {
+    display: none;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .navbar {
+    min-height: 75px;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    font-size: 15px;
+  }
+
+  .navbar-menu-button {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-links.navbar-links-open {
+    position: absolute;
+
+    top: 75px;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 0;
+
+    padding: 12px 20px;
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-sm);
+
+    box-shadow: 0 12px 25px var(--color-shadow);
+  }
+
+  .navbar-links.navbar-links-open a {
+    width: 100%;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid var(--color-border);
+
+    font-size: 12px;
+  }
+
+  .navbar-links.navbar-links-open a:last-child {
+    border-bottom: none;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .navbar {
+    min-height: 68px;
+  }
+
+  .navbar-links.navbar-links-open {
+    top: 68px;
+  }
+
+  .navbar-brand {
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================
+   PREMIUM NAVIGATION HOVER EFFECT
+========================================= */
+
+@media (min-width: 801px) {
+
+  .navbar-links {
+    gap: clamp(22px, 2.5vw, 36px);
+  }
+
+  .navbar-links a {
+    padding: 10px 14px;
+
+    border-radius: 999px;
+
+    color: var(--color-heading);
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .navbar-links a::after {
+    display: none;
+  }
+
+  .navbar-links a:hover {
+    background: var(--color-accent-soft);
+
+    color: var(--color-heading);
+
+    transform: translateY(-2px);
+  }
+
+  .navbar-links a:active {
+    background: #D6E0D5;
+    transform: translateY(0);
+  }
+
+  .navbar-links a:focus-visible {
+    background: var(--color-accent-soft);
+    border-radius: 999px;
+  }
+
+}
